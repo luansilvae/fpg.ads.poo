@@ -1,0 +1,292 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 3, 2020, 7:23:29 PM
+    Author     : Luan
+*/
+
+h1 {
+	text-align: center;
+	margin: 2rem 0;
+	color: #ffffff;
+	font-size: 1.5rem;
+}
+
+h2.empty-list {
+	color: #04D361;
+	font-size: 1rem;
+}
+
+main {
+  width: 1200px;
+	margin: 0 auto;
+	background: none;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+}
+
+main article {
+	background: #202024;
+  padding: 2rem;
+  border-radius: 4px;
+	border: 2px solid #202024;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	transition: all 200ms ease-in;
+}
+
+main article .title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+main article .title h2 {
+	max-width: 75%;
+}
+
+main article .title span {
+	color: #f6f6f6;
+	font-size: 0.9rem;
+}
+
+main article:hover {
+	border: 2px solid #3d3d3d;
+}
+
+main article h2 {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-size: 1.3rem;
+}
+
+main article p.ementa {
+	font-size: 0.9rem;
+	line-height: 1.5rem;
+	color: #bababa;
+	margin: 15px 0;
+}
+
+main article .actions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.9rem;
+	color: #ffffff;
+}
+
+.actions .buttons button {
+	outline: none;
+	font-size: 0.9rem;
+	font-weight: 500;
+	padding: 10px;
+	border-radius: 2px;
+	border: none;
+	cursor: pointer;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.actions .buttons button.alterar {
+	background: #4480d4;
+	transition: background 200ms ease-in;
+}
+
+.actions .buttons button.alterar:hover {
+	background: #3f70b5;
+} 
+
+.actions .buttons button.deletar {
+	margin-left: 10px;
+	background: #e34242;
+	transition: background 200ms ease-in;
+}
+
+
+.actions .buttons button.deletar:hover {
+	background: #c43737;
+}
+
+.aprovado {
+  font-weight: 500;
+  color: #04D361;
+}
+
+.reprovado {
+  font-weight: 500;
+  color: #f22424;
+} 
+
+form.form-insert {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 2rem;
+	
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+form.form-insert button.btn-insert {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background: #04D361;
+	color: #ffffff;
+	font-size: 2rem;
+	transition: background 200ms;
+}
+
+form.form-insert button.btn-insert:hover {
+	background: #09ba59;
+}
+
+form.form-insert span {
+	color: #ffffff;
+	font-size: 1rem;
+	font-weight: 500;
+	margin-left: 10px;
+}
+
+/*FORM INSSERT*/
+
+h2.add-disciplina-text {
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+form.insert-form {
+	background: #202024;
+  padding: 2rem;
+  border-radius: 4px;
+
+	width: 400px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+form.insert-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+	color: #ffffff;
+	font-size: 0.9rem;
+}
+
+form.insert-form input, textarea {
+	font-family: Roboto;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+	background:  #121214;
+  border-radius: 4px;
+  border: 2px solid #111;
+  font-size: 15px;
+  color: #c3c3c3;
+  transition: border-color 0.2s;
+	outline: none;
+	resize: vertical;
+}
+
+form.insert-form input:focus, textarea:focus {
+  border-color:#c4c4c4;
+}
+
+form.insert-form button {
+  display: block;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+form.insert-form button#formInsert {
+	background: #04D361;
+	color: #fff;
+}
+
+form.insert-form button#cancelar {
+	background: #fff;
+	color: #111;
+	margin-top: 20px;
+}
+
+form.insert-form button#formInsert:hover {
+  background-color:  #09ba59;
+}
+
+form.confirm-delete {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+form.confirm-delete span.confirm-text {
+	color: #bababa;
+	font-size: 0.9rem;
+	margin-bottom: 10px;
+}
+
+form.confirm-delete span.confirm-text b {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+form.confirm-delete .buttons-delete button {
+	background: none;
+	border: none;
+	color: #ffffff;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 10px 20px;
+}
+
+form.confirm-delete .buttons-delete button.confirm {
+	color: #04D361;
+}
+
+form.confirm-delete .buttons-delete button.cancel {
+	color: #e34242;
+}
+
+.error-message {
+	color:  #e34242;
+	font-size: 1.2rem;
+}
+@media(max-width: 1220px) {
+	main {
+		width: 800px;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	
+	form.form-insert {
+		width: 100%;
+		justify-content: center;
+	}
+}
+
+@media(max-width: 820px) {
+	main{
+		max-width: 400px;
+		grid-template-columns: repeat(1, 400px);
+		justify-content: center;
+		align-items: center;
+	}
+}

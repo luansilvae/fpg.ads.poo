@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px 'Roboto';
+}
+
+input, button {
+  font-family: 'Roboto';
+}
+
+main {
+  margin: 0 auto;
+  max-width: 330px;
+  width: 100%;
+  padding: 40px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 2px solid #ddd;
+  font-size: 15px;
+  color: #444;
+  transition: border-color 0.2s;
+}
+
+form input:focus {
+  border-color: #111;
+}
+
+form button#add {
+  display: block;
+  background: #111;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 100%;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.2s;
+}
+
+form button#add:hover {
+  background-color: #000;
+}
+
+section#contatos {
+  max-width: 600px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x:auto;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+section#contatos table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+tr.head{
+  background: #111;
+  color: #fff;
+}
+
+th, td {
+  text-align: center;
+  padding: 20px;
+}
+
+tr td:last-child form {
+  margin: 0;
+  display: flex;
+}
+
+tr td:last-child form button {
+  border: 0;
+  background: #e33e3b;
+  padding: 8px 10px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+  transition: background 200ms;
+}
+
+tr td:last-child form button:hover {
+  background: #b3312e;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2
+}

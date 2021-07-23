@@ -1,0 +1,9 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<header class="menu">
+  <ul>
+    <li><a href="index.jsp">INICIO</a></li>
+    <li><a href="sobre.jsp">SOBRE</a></li>
+    <li><a href="disciplinas.jsp">MINHAS DISCIPLINAS</a></li>
+  </ul>
+</header>
